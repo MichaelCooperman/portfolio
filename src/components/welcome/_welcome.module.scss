@@ -1,0 +1,103 @@
+@use "../../variables" as s;
+
+.welcome-section {
+  // background-image: url("./images/8414873.jpg");
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-attachment: fixed;
+  // background-position: center;
+  background-color: s.$GreyColor;
+  width: 100%;
+  min-width: 260px;
+  height: 800px;
+  border-bottom: 1px solid s.$PurpleColor;
+
+  p {
+    font-size: 1.4rem;
+  }
+
+  .welcome {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1400px;
+    height: 100%;
+  }
+}
+
+.button-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 20px;
+  border: 1px solid s.$PurpleColor;
+  font-family: s.$PrimaryFont;
+}
+
+.button-container button {
+  width: 101%;
+  height: 100%;
+  font-size: 20px;
+  font-family: s.$PrimaryFont;
+  background: s.$PurpleColor;
+  -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+  mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+  -webkit-mask-size: 2300% 100%;
+  mask-size: 2300% 100%;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  animation: anim2 0.7s steps(22) forwards;
+}
+
+.button-container button:hover {
+  animation: anim1 0.7s steps(22) forwards;
+}
+
+.mask {
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  width: 101%;
+  font-family: s.$PrimaryFont;
+  font-weight: lighter;
+  font-size: 20px;
+  // margin-top: 25px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+@keyframes anim1 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+
+@keyframes anim2 {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+
+@media (min-width: 425px) {
+  .welcome-section {
+    height: 1000px;
+  }
+}

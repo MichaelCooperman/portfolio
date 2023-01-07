@@ -1,0 +1,99 @@
+@use "../../../variables" as s;
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 79px;
+  padding: 0 20px;
+  // background-color: red;
+  border-bottom: 1px solid white;
+
+  a {
+    font-family: s.$LogoFont;
+    font-size: 2rem;
+  }
+}
+
+.navigation {
+  display: none;
+}
+
+.mobile-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 1px solid white;
+  background: s.$PurpleColor;
+
+  .hamburger {
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+  }
+}
+
+.navbar {
+  display: flex;
+  height: 80px;
+  width: 100%;
+
+  a {
+    text-decoration: none;
+    color: s.$WhiteText;
+  }
+}
+
+.navbar .mobile-navigation ul {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 200px;
+  top: 80px;
+  right: 0%;
+  width: 100%;
+  background-color: s.$GreyColor;
+  // background: linear-gradient(rgb(112, 112, 112), rgb(110, 110, 182));
+  border-top: 2px solid rgb(112, 112, 112);
+}
+
+ul {
+  list-style: none;
+  li {
+    a {
+      font-family: s.$PrimaryFont;
+      color: white;
+      text-decoration: none;
+
+      &:hover {
+        color: s.$GreyColor;
+      }
+    }
+  }
+}
+
+@media (min-width: 425px) {
+  .navigation {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background: s.$PurpleColor;
+    border-bottom: 1px solid white;
+    padding: 10px;
+
+    ul {
+      display: flex;
+      align-items: center;
+      li {
+        margin: 20px;
+      }
+    }
+  }
+
+  .mobile-navigation {
+    display: none;
+  }
+}

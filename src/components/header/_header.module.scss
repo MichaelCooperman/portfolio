@@ -1,0 +1,13 @@
+@use "../../variables" as s;
+
+.header-section {
+  background: s.$PurpleColor;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+
+  div {
+    max-width: 1400px;
+  }
+}
