@@ -1,8 +1,45 @@
+@use "../../variables" as s;
+
 .footer-section {
-  background-color: green;
+  background-color: s.$PurpleColor;
+  width: 100%;
+  min-width: 320px;
+
+  .footer {
+    // background-color: aquamarine;
+    max-width: 1400px;
+    width: 100%;
+    height: 200px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  // background-color: orange;
+  height: 75%;
   width: 100%;
 
-  div {
-    max-width: 1400px;
+  a {
+    text-decoration: none;
+    color: s.$WhiteText;
+    font-family: s.$PrimaryFont;
+    font-size: 1.4rem;
   }
+}
+
+.footer-socials {
+  // background-color: red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 25%;
+  width: 100%;
 }

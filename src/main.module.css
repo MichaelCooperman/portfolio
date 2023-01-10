@@ -81,6 +81,7 @@ button {
   width: 100%;
   height: 800px;
   border-bottom: 1px solid rgb(110, 110, 182);
+  min-width: 320px;
 }
 .about-section .about {
   display: flex;
@@ -90,7 +91,6 @@ button {
   text-align: center;
   max-width: 1400px;
   width: 90%;
-  margin: auto;
 }
 .about-section .about h2 {
   margin-top: 30px;
@@ -154,13 +154,43 @@ button {
   }
 }
 .contact-section {
-  background-color: blue;
+  background-color: rgba(18, 18, 18, 0.9529411765);
   width: 100%;
+  min-width: 320px;
   height: 800px;
   border-bottom: 1px solid rgb(110, 110, 182);
 }
-.contact-section div {
+.contact-section .contact {
   max-width: 1400px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+.contact-form textarea,
+.contact-form input {
+  box-sizing: border-box;
+}
+.contact-form input {
+  height: 50px;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-family: "Montserrat", sans-serif;
+}
+.contact-form textarea {
+  width: 100%;
+  margin-top: 10px;
 }
 
 @media (min-width: 425px) {
@@ -169,16 +199,48 @@ button {
   }
 }
 .footer-section {
-  background-color: green;
+  background-color: rgb(110, 110, 182);
+  width: 100%;
+  min-width: 320px;
+}
+.footer-section .footer {
+  max-width: 1400px;
+  width: 100%;
+  height: 200px;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 75%;
   width: 100%;
 }
-.footer-section div {
-  max-width: 1400px;
+.footer-links a {
+  text-decoration: none;
+  color: #faf8ff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 25%;
+  width: 100%;
 }
 
 .header-section {
   background: rgb(110, 110, 182);
   width: 100%;
+  min-width: 320px;
   position: fixed;
   top: 0;
   z-index: 10;
@@ -193,6 +255,7 @@ button {
   align-items: center;
   background-color: rgba(18, 18, 18, 0.9529411765);
   width: 100%;
+  min-width: 320px;
   height: 800px;
   border-bottom: 1px solid rgb(110, 110, 182);
 }
@@ -206,6 +269,7 @@ button {
   align-items: center;
   width: 100%;
   height: 100px;
+  margin-top: 10px;
 }
 
 .projects {
@@ -219,8 +283,8 @@ button {
 }
 
 .project-overlay {
-  height: 200px;
-  width: 320px;
+  height: 225px;
+  width: 350px;
   z-index: 2;
 }
 
@@ -229,16 +293,16 @@ button {
   justify-content: center;
   max-width: 500px;
   max-height: 500px;
-  height: 200px;
-  width: 320px;
+  height: 225px;
+  width: 350px;
   z-index: 3;
 }
 .project-cards .project-info {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 200px;
-  width: 100%;
+  height: 225px;
+  width: 350px;
   background: rgba(0, 0, 0, 0.4);
   z-index: 4;
   max-width: 320px;
@@ -265,17 +329,18 @@ button {
 }
 
 .test {
-  width: 100%;
-  width: 320px;
+  height: 225px;
+  width: 350px;
   text-decoration: none;
 }
 
 .project-img {
   position: absolute;
   z-index: 2;
-  width: 100%;
+  height: 225px;
+  width: 350px;
   max-width: 320px;
-  height: 200px;
+  max-height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
   opacity: 0.6;
@@ -291,7 +356,7 @@ button {
 .project-clickme {
   position: absolute;
   margin-left: 0px;
-  margin-top: 80px;
+  margin-top: 95px;
   opacity: 1;
   z-index: 4;
 }
@@ -309,7 +374,7 @@ button {
 .welcome-section {
   background-color: rgba(18, 18, 18, 0.9529411765);
   width: 100%;
-  min-width: 260px;
+  min-width: 320px;
   height: 800px;
   border-bottom: 1px solid rgb(110, 110, 182);
 }
@@ -425,7 +490,7 @@ button {
   justify-content: center;
   align-items: center;
   height: 79px;
-  padding: 0 20px;
+  width: 25%;
   border-bottom: 1px solid white;
 }
 .logo a {
@@ -441,13 +506,13 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
   border-bottom: 1px solid white;
   background: rgb(110, 110, 182);
+  width: 100%;
 }
 .mobile-navigation .hamburger {
   position: absolute;
-  right: 5%;
+  right: 7%;
   cursor: pointer;
 }
 

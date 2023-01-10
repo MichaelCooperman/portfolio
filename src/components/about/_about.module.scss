@@ -7,6 +7,7 @@
   width: 100%;
   height: 800px;
   border-bottom: 1px solid s.$PurpleColor;
+  min-width: 320px;
 
   .about {
     display: flex;
@@ -17,7 +18,6 @@
 
     max-width: 1400px;
     width: 90%;
-    margin: auto;
 
     h2 {
       margin-top: 30px;

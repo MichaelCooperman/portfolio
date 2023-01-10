@@ -1,13 +1,48 @@
 @use "../../variables" as s;
 
 .contact-section {
-  background-color: blue;
+  background-color: s.$GreyColor;
   width: 100%;
+  min-width: 320px;
   height: 800px;
   border-bottom: 1px solid s.$PurpleColor;
 
-  div {
+  .contact {
     max-width: 1400px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+
+  textarea,
+  input {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  input {
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-family: s.$PrimaryFont;
+  }
+
+  textarea {
+    width: 100%;
+    margin-top: 10px;
   }
 }
 

@@ -3,6 +3,7 @@
 .header-section {
   background: s.$PurpleColor;
   width: 100%;
+  min-width: 320px;
   position: fixed;
   top: 0;
   z-index: 10;
