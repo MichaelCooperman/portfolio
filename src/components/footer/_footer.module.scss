@@ -3,11 +3,10 @@
 .footer-section {
   background-color: s.$PurpleColor;
   width: 100%;
-  min-width: 320px;
+  // min-width: 320px;
 
   .footer {
-    // background-color: aquamarine;
-    max-width: 1400px;
+    max-width: 1440px;
     width: 100%;
     height: 200px;
     padding: 10px 0;
@@ -23,7 +22,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  // background-color: orange;
   height: 75%;
   width: 100%;
 
@@ -36,7 +34,6 @@
 }
 
 .footer-socials {
-  // background-color: red;
   display: flex;
   justify-content: space-around;
   align-items: center;

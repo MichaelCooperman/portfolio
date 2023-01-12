@@ -1,13 +1,6 @@
 @use "../../../variables" as s;
 
 .logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 79px;
-  width: 25%;
-  border-bottom: 1px solid white;
-
   a {
     font-family: s.$LogoFont;
     font-size: 2rem;
@@ -20,23 +13,24 @@
 
 .mobile-navigation {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid white;
-  background: s.$PurpleColor;
+  padding: 20px 10px;
   width: 100%;
-
+  // background-color:
   .hamburger {
-    position: absolute;
-    right: 7%;
     cursor: pointer;
   }
 }
 
 .navbar {
   display: flex;
-  height: 80px;
+  max-width: 1440px;
   width: 100%;
+  background-color: s.$PurpleColor;
+  top: 0;
+  left: 0;
+  z-index: 10;
 
   a {
     text-decoration: none;
@@ -55,8 +49,6 @@
   right: 0%;
   width: 100%;
   background-color: s.$GreyColor;
-  // background: linear-gradient(rgb(112, 112, 112), rgb(110, 110, 182));
-  border-top: 2px solid rgb(112, 112, 112);
 }
 
 ul {
@@ -68,26 +60,26 @@ ul {
       text-decoration: none;
 
       &:hover {
-        color: s.$GreyColor;
+        color: s.$PurpleColor;
       }
     }
   }
 }
 
-@media (min-width: 425px) {
+// hamburger till 992px
+@media (min-width: 992px) {
   .navigation {
-    width: 100%;
     display: flex;
-    justify-content: flex-end;
-    background: s.$PurpleColor;
-    border-bottom: 1px solid white;
-    padding: 10px;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 10px;
 
     ul {
       display: flex;
       align-items: center;
       li {
-        margin: 20px;
+        margin: 0 20px;
       }
     }
   }

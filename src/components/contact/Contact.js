@@ -44,7 +44,12 @@ const Contact = (props) => {
           />
           <input type="email" placeholder="Email" name="user_email" required />
           <input type="text" placeholder="Subject" name="subject" required />
-          <textarea name="message" cols="30" rows="10"></textarea>
+          <textarea
+            placeholder="Your Message here..."
+            name="message"
+            cols="30"
+            rows="10"
+          ></textarea>
           <div className={classes["button-container"]}>
             <span className={classes.mask}>Send Message</span>
             <button type="submit">Send Message</button>

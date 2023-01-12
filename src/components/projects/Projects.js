@@ -49,8 +49,8 @@ const Projects = () => {
           <ProjectCards
             img={test3}
             alt="Project 3 Image"
-            title="Test 3"
-            description="Whats been happening in your...WORLD!"
+            title="Project 3"
+            description="Project 3 is under construction and will be up soon!"
             git="https://www.google.com/"
           />
         </a>

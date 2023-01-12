@@ -1,4 +1,5 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -79,21 +80,18 @@ button {
   display: flex;
   background-color: rgba(18, 18, 18, 0.9529411765);
   width: 100%;
-  height: 800px;
+  padding: 150px 0;
   border-bottom: 1px solid rgb(110, 110, 182);
-  min-width: 320px;
 }
 .about-section .about {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: space-around;
+  align-items: center;
   text-align: center;
-  max-width: 1400px;
+  max-width: 1440px;
   width: 90%;
-}
-.about-section .about h2 {
-  margin-top: 30px;
+  height: 100%;
 }
 
 .skills {
@@ -134,9 +132,6 @@ button {
 }
 
 @media (min-width: 768px) {
-  .about-section {
-    height: 1000px;
-  }
   .skills {
     margin-top: 10px;
     flex-direction: row;
@@ -156,12 +151,11 @@ button {
 .contact-section {
   background-color: rgba(18, 18, 18, 0.9529411765);
   width: 100%;
-  min-width: 320px;
-  height: 800px;
+  padding: 150px 0;
   border-bottom: 1px solid rgb(110, 110, 182);
 }
 .contact-section .contact {
-  max-width: 1400px;
+  max-width: 1440px;
   width: 100%;
   height: 100%;
   display: flex;
@@ -176,6 +170,7 @@ button {
   align-items: center;
   justify-content: center;
   width: 80%;
+  max-width: 750px;
 }
 .contact-form textarea,
 .contact-form input {
@@ -191,20 +186,16 @@ button {
 .contact-form textarea {
   width: 100%;
   margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px;
 }
 
-@media (min-width: 425px) {
-  .contact-section {
-    height: 1000px;
-  }
-}
 .footer-section {
   background-color: rgb(110, 110, 182);
   width: 100%;
-  min-width: 320px;
 }
 .footer-section .footer {
-  max-width: 1400px;
+  max-width: 1440px;
   width: 100%;
   height: 200px;
   padding: 10px 0;
@@ -239,14 +230,9 @@ button {
 
 .header-section {
   background: rgb(110, 110, 182);
-  width: 100%;
-  min-width: 320px;
-  position: fixed;
-  top: 0;
-  z-index: 10;
 }
 .header-section div {
-  max-width: 1400px;
+  max-width: 1440px;
 }
 
 .projects-section {
@@ -255,12 +241,17 @@ button {
   align-items: center;
   background-color: rgba(18, 18, 18, 0.9529411765);
   width: 100%;
-  min-width: 320px;
-  height: 800px;
+  padding: 150px 0;
   border-bottom: 1px solid rgb(110, 110, 182);
 }
 .projects-section div {
-  max-width: 1400px;
+  max-width: 1440px;
+}
+
+.card {
+  height: 225px;
+  width: 320px;
+  transition: 1s;
 }
 
 .project-title {
@@ -269,7 +260,6 @@ button {
   align-items: center;
   width: 100%;
   height: 100px;
-  margin-top: 10px;
 }
 
 .projects {
@@ -279,33 +269,31 @@ button {
   justify-content: center;
   margin: 20px auto;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .project-overlay {
-  height: 225px;
-  width: 350px;
+  height: 100%;
+  width: 100%;
   z-index: 2;
+  transition: 1s;
 }
 
 .project-cards {
   display: flex;
   justify-content: center;
-  max-width: 500px;
-  max-height: 500px;
-  height: 225px;
-  width: 350px;
+  height: 100%;
+  width: 100%;
   z-index: 3;
 }
 .project-cards .project-info {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 225px;
-  width: 350px;
+  height: 100%;
+  width: 100%;
   background: rgba(0, 0, 0, 0.4);
   z-index: 4;
-  max-width: 320px;
 }
 .project-cards .project-info:hover {
   background: rgba(0, 0, 0, 0.7);
@@ -316,34 +304,35 @@ button {
   font-size: 0.7rem;
 }
 .project-cards h4 {
-  margin-left: 5px;
+  margin-left: 10px;
   z-index: 3;
   height: 10px;
 }
 .project-cards p {
   height: 30px;
   font-size: 0.8rem;
-  margin-left: 5px;
+  margin-left: 10px;
   z-index: 3;
   color: rgb(173, 173, 173);
 }
 
 .test {
-  height: 225px;
-  width: 350px;
+  height: 100%;
+  width: 100%;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
 }
 
 .project-img {
   position: absolute;
   z-index: 2;
   height: 225px;
-  width: 350px;
-  max-width: 320px;
-  max-height: 500px;
+  width: 320px;
   -o-object-fit: cover;
      object-fit: cover;
   opacity: 0.6;
+  transition: 1s;
 }
 
 .github-btn {
@@ -351,6 +340,7 @@ button {
   margin-top: 5px;
   margin-left: 285px;
   z-index: 5;
+  transition: 1s;
 }
 
 .project-clickme {
@@ -359,6 +349,7 @@ button {
   margin-top: 95px;
   opacity: 1;
   z-index: 4;
+  transition: 1s;
 }
 
 .project-buttons {
@@ -367,15 +358,24 @@ button {
 }
 
 @media (min-width: 425px) {
-  .projects-section {
-    height: 1000px;
+  .card {
+    height: 300px;
+    width: 425px;
+  }
+  .project-img {
+    height: 300px;
+    width: 425px;
+  }
+  .github-btn {
+    margin-left: 390px;
+  }
+  .project-clickme {
+    margin-top: 140px;
   }
 }
 .welcome-section {
   background-color: rgba(18, 18, 18, 0.9529411765);
-  width: 100%;
-  min-width: 320px;
-  height: 800px;
+  padding: 150px 0;
   border-bottom: 1px solid rgb(110, 110, 182);
 }
 .welcome-section p {
@@ -387,7 +387,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1400px;
+  max-width: 1440px;
   height: 100%;
 }
 
@@ -480,19 +480,6 @@ button {
     mask-position: 100% 0;
   }
 }
-@media (min-width: 425px) {
-  .welcome-section {
-    height: 1000px;
-  }
-}
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 79px;
-  width: 25%;
-  border-bottom: 1px solid white;
-}
 .logo a {
   font-family: "Grape Nuts", cursive;
   font-size: 2rem;
@@ -504,22 +491,23 @@ button {
 
 .mobile-navigation {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid white;
-  background: rgb(110, 110, 182);
+  padding: 20px 10px;
   width: 100%;
 }
 .mobile-navigation .hamburger {
-  position: absolute;
-  right: 7%;
   cursor: pointer;
 }
 
 .navbar {
   display: flex;
-  height: 80px;
+  max-width: 1440px;
   width: 100%;
+  background-color: rgb(110, 110, 182);
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
 .navbar a {
   text-decoration: none;
@@ -537,7 +525,6 @@ button {
   right: 0%;
   width: 100%;
   background-color: rgba(18, 18, 18, 0.9529411765);
-  border-top: 2px solid rgb(112, 112, 112);
 }
 
 ul {
@@ -549,24 +536,23 @@ ul li a {
   text-decoration: none;
 }
 ul li a:hover {
-  color: rgba(18, 18, 18, 0.9529411765);
+  color: rgb(110, 110, 182);
 }
 
-@media (min-width: 425px) {
+@media (min-width: 992px) {
   .navigation {
-    width: 100%;
     display: flex;
-    justify-content: flex-end;
-    background: rgb(110, 110, 182);
-    border-bottom: 1px solid white;
-    padding: 10px;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 10px;
   }
   .navigation ul {
     display: flex;
     align-items: center;
   }
   .navigation ul li {
-    margin: 20px;
+    margin: 0 20px;
   }
   .mobile-navigation {
     display: none;

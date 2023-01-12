@@ -3,25 +3,20 @@
 .about-section {
   display: flex;
   background-color: s.$GreyColor;
-  // border-top: 1px solid red;
   width: 100%;
-  height: 800px;
+  padding: 150px 0;
   border-bottom: 1px solid s.$PurpleColor;
-  min-width: 320px;
+  // min-width: 320px;
 
   .about {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: space-around;
+    align-items: center;
     text-align: center;
-
-    max-width: 1400px;
+    max-width: 1440px;
     width: 90%;
-
-    h2 {
-      margin-top: 30px;
-    }
+    height: 100%;
   }
 }
 
@@ -30,11 +25,9 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  // background-color: pink;
   width: 100%;
 
   .skill-container {
-    // background-color: red;
     height: 80px;
     display: flex;
     flex-direction: column;
@@ -63,7 +56,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // background-color: yellow;
 
   .button-container {
     margin: 0 40px;
@@ -71,9 +63,9 @@
 }
 
 @media (min-width: 768px) {
-  .about-section {
-    height: 1000px;
-  }
+  // .about-section {
+  //   height: 1000px;
+  // }
 
   .skills {
     margin-top: 10px;

@@ -1,12 +1,14 @@
 import React from "react";
 import NavLinks from "./NavLinks";
 import classes from "../../../main.module.css";
+import Logo from "./Logo";
 
 const Navigation = () => {
   return (
-    <nav className={classes["navigation"]}>
+    <div className={classes["navigation"]}>
+      <Logo />
       <NavLinks />
-    </nav>
+    </div>
   );
 };
 

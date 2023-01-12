@@ -6,12 +6,17 @@
   align-items: center;
   background-color: s.$GreyColor;
   width: 100%;
-  min-width: 320px;
-  height: 800px;
+  padding: 150px 0;
   border-bottom: 1px solid s.$PurpleColor;
   div {
-    max-width: 1400px;
+    max-width: 1440px;
   }
+}
+
+.card {
+  height: 225px;
+  width: 320px;
+  transition: 1s;
 }
 
 .project-title {
@@ -20,8 +25,7 @@
   align-items: center;
   width: 100%;
   height: 100px;
-  margin-top: 10px;
-  // background-color: greenyellow;
+  // margin-top: 10px;
 }
 
 .projects {
@@ -31,33 +35,31 @@
   justify-content: center;
   margin: 20px auto;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .project-overlay {
-  height: 225px;
-  width: 350px;
+  height: 100%;
+  width: 100%;
   z-index: 2;
+  transition: 1s;
 }
 
 .project-cards {
   display: flex;
   justify-content: center;
-  max-width: 500px;
-  max-height: 500px;
-  height: 225px;
-  width: 350px;
+  height: 100%;
+  width: 100%;
   z-index: 3;
 
   .project-info {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 225px;
-    width: 350px;
+    height: 100%;
+    width: 100%;
     background: rgba(0, 0, 0, 0.4);
     z-index: 4;
-    max-width: 320px;
 
     &:hover {
       background: rgba(0, 0, 0, 0.7);
@@ -71,7 +73,7 @@
   }
 
   h4 {
-    margin-left: 5px;
+    margin-left: 10px;
     z-index: 3;
     height: 10px;
   }
@@ -79,27 +81,28 @@
   p {
     height: 30px;
     font-size: 0.8rem;
-    margin-left: 5px;
+    margin-left: 10px;
     z-index: 3;
     color: rgb(173, 173, 173);
   }
 }
 
 .test {
-  height: 225px;
-  width: 350px;
+  height: 100%;
+  width: 100%;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
 }
 
 .project-img {
   position: absolute;
   z-index: 2;
   height: 225px;
-  width: 350px;
-  max-width: 320px;
-  max-height: 500px;
+  width: 320px;
   object-fit: cover;
   opacity: 0.6;
+  transition: 1s;
 }
 
 .github-btn {
@@ -107,6 +110,7 @@
   margin-top: 5px;
   margin-left: 285px;
   z-index: 5;
+  transition: 1s;
 }
 
 .project-clickme {
@@ -115,6 +119,7 @@
   margin-top: 95px;
   opacity: 1;
   z-index: 4;
+  transition: 1s;
 }
 
 .project-buttons {
@@ -123,7 +128,21 @@
 }
 
 @media (min-width: 425px) {
-  .projects-section {
-    height: 1000px;
+  .card {
+    height: 300px;
+    width: 425px;
+  }
+
+  .project-img {
+    height: 300px;
+    width: 425px;
+  }
+
+  .github-btn {
+    margin-left: 390px;
+  }
+
+  .project-clickme {
+    margin-top: 140px;
   }
 }

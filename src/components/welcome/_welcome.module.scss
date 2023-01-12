@@ -7,9 +7,10 @@
   // background-attachment: fixed;
   // background-position: center;
   background-color: s.$GreyColor;
-  width: 100%;
-  min-width: 320px;
-  height: 800px;
+
+  // min-width: 330px;
+  // height: 800px;
+  padding: 150px 0;
   border-bottom: 1px solid s.$PurpleColor;
 
   p {
@@ -22,7 +23,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 1400px;
+    max-width: 1440px;
     height: 100%;
   }
 }
@@ -96,8 +97,8 @@
   }
 }
 
-@media (min-width: 425px) {
-  .welcome-section {
-    height: 1000px;
-  }
-}
+// @media (min-width: 425px) {
+//    .welcome-section {
+//      height: 1000px;
+//    }
+// }
