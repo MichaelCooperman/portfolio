@@ -375,7 +375,7 @@ button {
 }
 .welcome-section {
   background-color: rgba(18, 18, 18, 0.9529411765);
-  padding: 150px 0;
+  padding: 200px 0;
   border-bottom: 1px solid rgb(110, 110, 182);
 }
 .welcome-section p {
@@ -505,6 +505,7 @@ button {
   max-width: 1440px;
   width: 100%;
   background-color: rgb(110, 110, 182);
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
