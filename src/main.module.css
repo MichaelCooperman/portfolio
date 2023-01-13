@@ -229,6 +229,9 @@ button {
 }
 
 .header-section {
+  display: flex;
+  justify-content: center;
+  height: 80px;
   background: rgb(110, 110, 182);
 }
 .header-section div {
@@ -501,13 +504,10 @@ button {
 }
 
 .navbar {
-  display: flex;
   max-width: 1440px;
   width: 100%;
-  background-color: rgb(110, 110, 182);
   position: fixed;
-  top: 0;
-  left: 0;
+  background-color: rgb(110, 110, 182);
   z-index: 10;
 }
 .navbar a {

@@ -17,20 +17,18 @@
   align-items: center;
   padding: 20px 10px;
   width: 100%;
-  // background-color:
   .hamburger {
     cursor: pointer;
   }
 }
 
 .navbar {
-  display: flex;
   max-width: 1440px;
   width: 100%;
-  background-color: s.$PurpleColor;
   position: fixed;
-  top: 0;
-  left: 0;
+  background-color: s.$PurpleColor;
+  // top: 0;
+  // left: 0;
   z-index: 10;
 
   a {
