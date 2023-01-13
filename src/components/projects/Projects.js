@@ -22,7 +22,7 @@ const Projects = () => {
             img={test1}
             alt="Project 1 Image"
             title="Daydream Cookies"
-            description="Full functional cart and ordering feature."
+            description="Showcases a fully functional shopping experience with amazing products. "
             git="https://github.com/MichaelCooperman/Cookie-Store"
           />
         </a>
@@ -36,7 +36,7 @@ const Projects = () => {
             img={test2}
             alt="Project 2 Image"
             title="Airbnb Clone"
-            description="Uses an API and database to present rental homes."
+            description="Uses an API and database to present rental homes with categories."
             git="https://github.com/MichaelCooperman/Airbnb-Clone"
           />
         </a>

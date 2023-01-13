@@ -17,6 +17,21 @@
   height: 225px;
   width: 320px;
   transition: 1s;
+  margin-bottom: 80px;
+}
+
+.project-des {
+  height: auto;
+  padding: 0 5px;
+  line-height: 1px;
+  background-color: s.$PurpleColor;
+
+  p {
+    color: s.$WhiteText;
+    font-family: s.$PrimaryFont;
+    font-size: 0.8rem;
+    line-height: 25px;
+  }
 }
 
 .project-title {
@@ -25,7 +40,6 @@
   align-items: center;
   width: 100%;
   height: 100px;
-  // margin-top: 10px;
 }
 
 .projects {
@@ -73,15 +87,16 @@
   }
 
   h4 {
-    margin-left: 10px;
+    margin-left: 5px;
+    margin-bottom: 5px;
     z-index: 3;
-    height: 10px;
+    // height: 10px;
   }
 
   p {
     height: 30px;
     font-size: 0.8rem;
-    margin-left: 10px;
+    margin-left: 5px;
     z-index: 3;
     color: rgb(173, 173, 173);
   }

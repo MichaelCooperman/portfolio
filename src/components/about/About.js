@@ -21,7 +21,7 @@ const About = () => {
           </p>
         </div>
 
-        <h2>Skills</h2>
+        <h2 className={classes["skill-title"]}>Skills</h2>
         <div className={classes.skills}>
           <div className={classes["top-skills"]}>
             <div className={classes["skill-container"]}>

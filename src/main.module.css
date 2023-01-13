@@ -122,6 +122,10 @@ button {
   flex-direction: row;
 }
 
+.skill-title {
+  margin-top: 40px;
+}
+
 .about-btn {
   display: flex;
   justify-content: center;
@@ -255,6 +259,20 @@ button {
   height: 225px;
   width: 320px;
   transition: 1s;
+  margin-bottom: 80px;
+}
+
+.project-des {
+  height: auto;
+  padding: 0 5px;
+  line-height: 1px;
+  background-color: rgb(110, 110, 182);
+}
+.project-des p {
+  color: #faf8ff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  line-height: 25px;
 }
 
 .project-title {
@@ -307,14 +325,14 @@ button {
   font-size: 0.7rem;
 }
 .project-cards h4 {
-  margin-left: 10px;
+  margin-left: 5px;
+  margin-bottom: 5px;
   z-index: 3;
-  height: 10px;
 }
 .project-cards p {
   height: 30px;
   font-size: 0.8rem;
-  margin-left: 10px;
+  margin-left: 5px;
   z-index: 3;
   color: rgb(173, 173, 173);
 }
@@ -508,6 +526,7 @@ button {
   width: 100%;
   position: fixed;
   background-color: rgb(110, 110, 182);
+  top: 0;
   z-index: 10;
 }
 .navbar a {

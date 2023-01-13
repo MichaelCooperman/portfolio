@@ -20,9 +20,11 @@ const ProjectCards = (props) => {
           <h6 className={classes["project-clickme"]}>Click To Preview</h6>
           <div className={classes["project-info"]}>
             <h4>{title}</h4>
-            <p>{description}</p>
           </div>
         </div>
+      </div>
+      <div className={classes["project-des"]}>
+        <p>{description}</p>
       </div>
     </div>
   );
