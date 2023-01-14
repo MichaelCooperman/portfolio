@@ -312,6 +312,9 @@ button {
   width: 100%;
   z-index: 3;
 }
+.project-cards h6 {
+  z-index: 5;
+}
 .project-cards .project-info {
   display: flex;
   flex-direction: column;

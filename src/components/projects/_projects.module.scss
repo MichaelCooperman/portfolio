@@ -66,6 +66,10 @@
   width: 100%;
   z-index: 3;
 
+  h6 {
+    z-index: 5;
+  }
+
   .project-info {
     display: flex;
     flex-direction: column;
