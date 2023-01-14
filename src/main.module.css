@@ -237,6 +237,8 @@ button {
   justify-content: center;
   height: 80px;
   background: rgb(110, 110, 182);
+  position: fixed;
+  z-index: 10;
 }
 .header-section div {
   max-width: 1440px;
@@ -259,7 +261,7 @@ button {
   height: 225px;
   width: 320px;
   transition: 1s;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
 .project-des {
@@ -328,6 +330,7 @@ button {
   margin-left: 5px;
   margin-bottom: 5px;
   z-index: 3;
+  height: 10px;
 }
 .project-cards p {
   height: 30px;
@@ -378,6 +381,19 @@ button {
   background-color: red;
 }
 
+.project-lans {
+  display: flex;
+  position: absolute;
+  z-index: 5;
+  margin-right: 232px;
+  transition: 1s;
+}
+
+@media (max-width: 320px) {
+  .card {
+    margin-bottom: 0px;
+  }
+}
 @media (min-width: 425px) {
   .card {
     height: 300px;
@@ -390,8 +406,16 @@ button {
   .github-btn {
     margin-left: 390px;
   }
+  .project-lans {
+    margin-right: 330px;
+  }
   .project-clickme {
     margin-top: 140px;
+  }
+}
+@media (min-width: 1440px) {
+  .projects {
+    flex-direction: row;
   }
 }
 .welcome-section {

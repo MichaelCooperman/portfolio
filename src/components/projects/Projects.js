@@ -4,6 +4,7 @@ import ProjectCards from "./ProjectCards";
 import test1 from "../../images/test1.jpg";
 import test2 from "../../images/test2.jpg";
 import test3 from "../../images/test3.jpg";
+import { DiSass, DiReact } from "react-icons/di";
 
 const Projects = () => {
   return (
@@ -19,10 +20,12 @@ const Projects = () => {
           href="https://daydreamcookies.netlify.app/"
         >
           <ProjectCards
+            lan1={<DiSass color="#CD6799" size="40px" />}
+            lan2={<DiReact color="#61DBFB" size="40px" />}
             img={test1}
             alt="Project 1 Image"
             title="Daydream Cookies"
-            description="Showcases a fully functional shopping experience with amazing products. "
+            description="Showcases fully functional shopping experience. "
             git="https://github.com/MichaelCooperman/Cookie-Store"
           />
         </a>
@@ -33,10 +36,12 @@ const Projects = () => {
           href="https://airbnb-clone-mc.netlify.app/"
         >
           <ProjectCards
+            lan1={<DiSass color="#CD6799" size="40px" />}
+            lan2={<DiReact color="#61DBFB" size="40px" />}
             img={test2}
             alt="Project 2 Image"
             title="Airbnb Clone"
-            description="Uses an API and database to present rental homes with categories."
+            description="Uses an API and database to present rental homes."
             git="https://github.com/MichaelCooperman/Airbnb-Clone"
           />
         </a>

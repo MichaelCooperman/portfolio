@@ -5,6 +5,8 @@
   justify-content: center;
   height: 80px;
   background: s.$PurpleColor;
+  position: fixed;
+  z-index: 10;
 
   div {
     max-width: 1440px;

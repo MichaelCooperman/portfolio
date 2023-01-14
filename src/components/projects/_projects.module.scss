@@ -17,7 +17,7 @@
   height: 225px;
   width: 320px;
   transition: 1s;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
 .project-des {
@@ -90,7 +90,7 @@
     margin-left: 5px;
     margin-bottom: 5px;
     z-index: 3;
-    // height: 10px;
+    height: 10px;
   }
 
   p {
@@ -142,6 +142,20 @@
   background-color: red;
 }
 
+.project-lans {
+  display: flex;
+  position: absolute;
+  z-index: 5;
+  margin-right: 232px;
+  transition: 1s;
+}
+
+@media (max-width: 320px) {
+  .card {
+    margin-bottom: 0px;
+  }
+}
+
 @media (min-width: 425px) {
   .card {
     height: 300px;
@@ -157,7 +171,18 @@
     margin-left: 390px;
   }
 
+  .project-lans {
+    margin-right: 330px;
+  }
+
   .project-clickme {
     margin-top: 140px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .projects {
+    flex-direction: row;
+    // flex-wrap: wrap;
   }
 }
