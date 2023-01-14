@@ -9,7 +9,9 @@ const Welcome = () => {
         <h1>Hello,</h1>
         <h1>I'm Mike</h1>
         <p>A Front-End Web Developer.</p>
-        <Buttons mask="Get in touch." text="Get in touch." />
+        <a href="/#contact">
+          <Buttons mask="Get in touch." text="Get in touch." />
+        </a>
       </div>
     </section>
   );

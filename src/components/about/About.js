@@ -26,7 +26,7 @@ const About = () => {
           <div className={classes["top-skills"]}>
             <div className={classes["skill-container"]}>
               <DiJavascript color="yellow" size="50px" />
-              <h5>Javascript</h5>
+              <h5>JS</h5>
             </div>
             <div className={classes["skill-container"]}>
               <DiCss3 color="#2965f1" size="50px" />
@@ -52,9 +52,15 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className={classes["about-btn"]}>
-          <Buttons mask="Github" text="Github" />
-        </div>
+        <a
+          href="https://github.com/MichaelCooperman"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <div className={classes["about-btn"]}>
+            <Buttons mask="Github" text="Github" />
+          </div>
+        </a>
       </div>
     </section>
   );
