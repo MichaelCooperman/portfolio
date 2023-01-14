@@ -82,6 +82,7 @@ button {
   width: 100%;
   padding: 150px 0;
   border-bottom: 1px solid rgb(110, 110, 182);
+  scroll-margin-top: 80px;
 }
 .about-section .about {
   display: flex;
@@ -160,6 +161,7 @@ button {
   width: 100%;
   padding: 150px 0;
   border-bottom: 1px solid rgb(110, 110, 182);
+  scroll-margin-top: 80px;
 }
 .contact-section .contact {
   max-width: 1440px;
@@ -255,6 +257,7 @@ button {
   width: 100%;
   padding: 150px 0;
   border-bottom: 1px solid rgb(110, 110, 182);
+  scroll-margin-top: 80px;
 }
 .projects-section div {
   max-width: 1440px;
@@ -428,6 +431,7 @@ button {
   background-color: rgba(18, 18, 18, 0.9529411765);
   padding: 200px 0;
   border-bottom: 1px solid rgb(110, 110, 182);
+  scroll-margin-top: 80px;
 }
 .welcome-section p {
   font-size: 1.4rem;

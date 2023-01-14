@@ -1,17 +1,10 @@
 @use "../../variables" as s;
 
 .welcome-section {
-  // background-image: url("./images/8414873.jpg");
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  // background-attachment: fixed;
-  // background-position: center;
   background-color: s.$GreyColor;
-
-  // min-width: 330px;
-  // height: 800px;
   padding: 200px 0;
   border-bottom: 1px solid s.$PurpleColor;
+  scroll-margin-top: 80px;
 
   p {
     font-size: 1.4rem;
@@ -100,9 +93,3 @@
     mask-position: 100% 0;
   }
 }
-
-// @media (min-width: 425px) {
-//    .welcome-section {
-//      height: 1000px;
-//    }
-// }
