@@ -93,6 +93,9 @@ button {
   width: 90%;
   height: 100%;
 }
+.about-section .about a {
+  text-decoration: none;
+}
 
 .skills {
   display: flex;
@@ -434,6 +437,9 @@ button {
   align-items: center;
   max-width: 1440px;
   height: 100%;
+}
+.welcome-section .welcome a {
+  text-decoration: none;
 }
 
 .button-container {
