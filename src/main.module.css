@@ -332,6 +332,7 @@ button {
 }
 .card-front .project-stuff .project-more {
   width: 100px;
+  padding: 2px;
   border-radius: 20px;
   background-color: #faf8ff;
   font-family: "Kalam", cursive;
@@ -388,6 +389,7 @@ button {
   color: rgb(110, 110, 182);
 }
 .card-back .card-back-bottom .card-back-btns {
+  padding: 5px;
   width: 75px;
   border-radius: 20px;
   background-color: #faf8ff;
