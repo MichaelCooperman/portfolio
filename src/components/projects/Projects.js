@@ -13,52 +13,30 @@ const Projects = () => {
         <h2>Projects</h2>
       </div>
       <div className={classes.projects}>
-        <a
-          className={classes.test}
-          rel="noreferrer"
-          target="_blank"
-          href="https://daydreamcookies.netlify.app/"
-        >
-          <ProjectCards
-            lan1={<DiSass color="#CD6799" size="40px" />}
-            lan2={<DiReact color="#61DBFB" size="40px" />}
-            img={test1}
-            alt="Project 1 Image"
-            title="Daydream Cookies"
-            description="Showcases fully functional shopping experience. "
-            git="https://github.com/MichaelCooperman/Cookie-Store"
-          />
-        </a>
-        <a
-          className={classes.test}
-          rel="noreferrer"
-          target="_blank"
-          href="https://airbnb-clone-mc.netlify.app/"
-        >
-          <ProjectCards
-            lan1={<DiSass color="#CD6799" size="40px" />}
-            lan2={<DiReact color="#61DBFB" size="40px" />}
-            img={test2}
-            alt="Project 2 Image"
-            title="Airbnb Clone"
-            description="Uses an API and database to present rental homes."
-            git="https://github.com/MichaelCooperman/Airbnb-Clone"
-          />
-        </a>
-        <a
-          className={classes.test}
-          rel="noreferrer"
-          target="_blank"
-          href="https://jacekjeznach.com/"
-        >
-          <ProjectCards
-            img={test3}
-            alt="Project 3 Image"
-            title="Project 3"
-            description="Project 3 is under construction and will be up soon!"
-            git="https://www.google.com/"
-          />
-        </a>
+        <ProjectCards
+          site="https://daydreamcookies.netlify.app/"
+          img={test1}
+          alt="Project 1 Image"
+          title="Daydream Cookies"
+          description="Showcases fully functional shopping experience. Including a working cart modal made with React and Sass."
+          git="https://github.com/MichaelCooperman/Cookie-Store"
+        />
+        <ProjectCards
+          site="https://airbnb-clone-mc.netlify.app/"
+          img={test2}
+          alt="Project 2 Image"
+          title="Airbnb Clone"
+          description="Uses an API and database to present rental homes. Category feature for different types of homes, made using React and Sass."
+          git="https://github.com/MichaelCooperman/Airbnb-Clone"
+        />
+        <ProjectCards
+          site="https://www.google.com/"
+          img={test3}
+          alt="Project 3 Image"
+          title="Project 3"
+          description="Project 3 is under construction and will be up soon!"
+          git="https://www.google.com/"
+        />
       </div>
     </section>
   );

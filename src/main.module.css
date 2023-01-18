@@ -25,8 +25,6 @@ h1 {
 h2 {
   font-family: "Montserrat", sans-serif;
   color: rgb(110, 110, 182);
-  -webkit-text-decoration: underline 1px solid white;
-          text-decoration: underline 1px solid white;
   font-size: 2rem;
 }
 
@@ -51,11 +49,11 @@ h5 {
 h6 {
   font-size: 1rem;
   color: #faf8ff;
-  font-family: "Indie Flower", cursive;
+  font-family: "Kalam", cursive;
 }
 
 p {
-  font-family: "Indie Flower", cursive;
+  font-family: "Kalam", cursive;
   color: rgb(112, 112, 112);
   font-size: 0.9rem;
   line-height: 40px;
@@ -96,6 +94,9 @@ button {
 }
 .about-section .about a {
   text-decoration: none;
+}
+.about-section .about p {
+  color: rgb(228, 227, 227);
 }
 
 .skills {
@@ -250,45 +251,29 @@ button {
 }
 
 .projects-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 200px 0;
   background-color: rgba(18, 18, 18, 0.9529411765);
-  width: 100%;
-  padding: 150px 0;
   border-bottom: 1px solid rgb(110, 110, 182);
-  scroll-margin-top: 80px;
-}
-.projects-section div {
-  max-width: 1440px;
 }
 
-.card {
+.card-1 {
+  display: flex;
+  flex-direction: column;
   height: 225px;
   width: 320px;
   transition: 1s;
-  margin-bottom: 40px;
 }
 
-.project-des {
-  height: auto;
-  padding: 0 5px;
-  line-height: 1px;
-  background-color: rgb(110, 110, 182);
+.overlay {
+  position: absolute;
+  height: 225px;
+  width: 320px;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 3;
+  transition: 1s;
 }
-.project-des p {
-  color: #faf8ff;
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.8rem;
-  line-height: 25px;
-}
-
-.project-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100px;
+.overlay:hover {
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .projects {
@@ -299,65 +284,17 @@ button {
   margin: 20px auto;
   width: 100%;
   height: 100%;
-}
-
-.project-overlay {
-  height: 100%;
-  width: 100%;
-  z-index: 2;
+  max-width: 1440px;
   transition: 1s;
 }
 
-.project-cards {
+.card-front {
   display: flex;
-  justify-content: center;
-  height: 100%;
   width: 100%;
-  z-index: 3;
-}
-.project-cards h6 {
-  z-index: 5;
-}
-.project-cards .project-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
   height: 100%;
-  width: 100%;
   background: rgba(0, 0, 0, 0.4);
-  z-index: 4;
 }
-.project-cards .project-info:hover {
-  background: rgba(0, 0, 0, 0.7);
-  transition: 1.5s;
-}
-.project-cards .project-info p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.7rem;
-}
-.project-cards h4 {
-  margin-left: 5px;
-  margin-bottom: 5px;
-  z-index: 3;
-  height: 10px;
-}
-.project-cards p {
-  height: 30px;
-  font-size: 0.8rem;
-  margin-left: 5px;
-  z-index: 3;
-  color: rgb(173, 173, 173);
-}
-
-.test {
-  height: 100%;
-  width: 100%;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-}
-
-.project-img {
+.card-front img {
   position: absolute;
   z-index: 2;
   height: 225px;
@@ -367,64 +304,128 @@ button {
   opacity: 0.6;
   transition: 1s;
 }
-
-.github-btn {
-  position: absolute;
-  margin-top: 5px;
-  margin-left: 285px;
-  z-index: 5;
-  transition: 1s;
-}
-
-.project-clickme {
-  position: absolute;
-  margin-left: 0px;
-  margin-top: 95px;
-  opacity: 1;
-  z-index: 4;
-  transition: 1s;
-}
-
-.project-buttons {
-  width: 100px;
-  background-color: red;
-}
-
-.project-lans {
+.card-front .project-stuff {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   position: absolute;
+  height: 225px;
+  width: 320px;
   z-index: 5;
-  margin-right: 232px;
+  padding: 5px;
   transition: 1s;
 }
-
-@media (max-width: 320px) {
-  .card {
-    margin-bottom: 0px;
-  }
+.card-front .project-stuff a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
 }
+.card-front .project-stuff h4 {
+  align-self: flex-start;
+}
+.card-front .project-stuff h6 {
+  margin: auto;
+}
+.card-front .project-stuff button {
+  background: none;
+  border: none;
+  align-self: flex-end;
+  color: #faf8ff;
+  -webkit-text-decoration: underline 1px solid #faf8ff;
+          text-decoration: underline 1px solid #faf8ff;
+  z-index: 6;
+}
+.card-front .project-stuff button:hover {
+  color: rgb(110, 110, 182);
+  -webkit-text-decoration: underline 1px solid rgb(110, 110, 182);
+          text-decoration: underline 1px solid rgb(110, 110, 182);
+  transition: 0s;
+}
+.card-front .card-front-hidden {
+  display: none;
+}
+
+.card-back {
+  padding: 5px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  height: 225px;
+  width: 320px;
+  transition: 1s;
+}
+.card-back h4 {
+  z-index: 4;
+}
+.card-back p {
+  z-index: 4;
+  color: rgb(110, 110, 182);
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 20px;
+}
+.card-back .card-back-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  z-index: 4;
+}
+.card-back .card-back-bottom a {
+  color: #faf8ff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+}
+.card-back .card-back-bottom a:hover {
+  color: rgb(110, 110, 182);
+}
+.card-back .card-back-bottom button:hover {
+  color: rgb(110, 110, 182);
+  -webkit-text-decoration: underline 1px solid rgb(110, 110, 182);
+          text-decoration: underline 1px solid rgb(110, 110, 182);
+}
+.card-back button {
+  background: none;
+  border: none;
+  color: #faf8ff;
+  -webkit-text-decoration: underline 1px solid #faf8ff;
+          text-decoration: underline 1px solid #faf8ff;
+}
+
 @media (min-width: 425px) {
-  .card {
+  .card-1 {
+    height: 300px;
+    width: 425px;
+    margin-bottom: 20px;
+  }
+  .overlay {
     height: 300px;
     width: 425px;
   }
-  .project-img {
+  .card-front img {
     height: 300px;
     width: 425px;
   }
-  .github-btn {
-    margin-left: 390px;
+  .card-front .project-stuff {
+    height: 300px;
+    width: 425px;
   }
-  .project-lans {
-    margin-right: 330px;
-  }
-  .project-clickme {
-    margin-top: 140px;
+  .card-back {
+    height: 300px;
+    width: 425px;
+    padding: 10px;
   }
 }
 @media (min-width: 1440px) {
   .projects {
     flex-direction: row;
+    justify-content: space-around;
   }
 }
 .welcome-section {
@@ -435,6 +436,7 @@ button {
 }
 .welcome-section p {
   font-size: 1.4rem;
+  color: rgb(110, 110, 182);
 }
 .welcome-section .welcome {
   display: flex;
@@ -474,7 +476,6 @@ button {
   -webkit-mask-size: 2300% 100%;
   mask-size: 2300% 100%;
   border: none;
-  color: #000;
   cursor: pointer;
   -webkit-animation: anim2 0.7s steps(22) forwards;
           animation: anim2 0.7s steps(22) forwards;

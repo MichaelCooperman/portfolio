@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import NavLinks from "./NavLinks";
 import classes from "../../../main.module.css";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { GrClose } from "react-icons/gr";
+import { AiOutlineClose } from "react-icons/ai";
 import Logo from "./Logo";
 
 const MobileNavigation = () => {
@@ -18,7 +18,7 @@ const MobileNavigation = () => {
   );
 
   const closedHamburger = (
-    <GrClose
+    <AiOutlineClose
       size="30px"
       color="white"
       className={classes.hamburger}

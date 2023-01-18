@@ -1,46 +1,30 @@
 @use "../../variables" as s;
 
 .projects-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 200px 0;
   background-color: s.$GreyColor;
-  width: 100%;
-  padding: 150px 0;
   border-bottom: 1px solid s.$PurpleColor;
-  scroll-margin-top: 80px;
-  div {
-    max-width: 1440px;
-  }
 }
 
-.card {
+.card-1 {
+  display: flex;
+  flex-direction: column;
   height: 225px;
   width: 320px;
   transition: 1s;
-  margin-bottom: 40px;
 }
 
-.project-des {
-  height: auto;
-  padding: 0 5px;
-  line-height: 1px;
-  background-color: s.$PurpleColor;
+.overlay {
+  position: absolute;
+  height: 225px;
+  width: 320px;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 3;
+  transition: 1s;
 
-  p {
-    color: s.$WhiteText;
-    font-family: s.$PrimaryFont;
-    font-size: 0.8rem;
-    line-height: 25px;
+  &:hover {
+    background: rgba(0, 0, 0, 0.7);
   }
-}
-
-.project-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100px;
 }
 
 .projects {
@@ -51,143 +35,170 @@
   margin: 20px auto;
   width: 100%;
   height: 100%;
-}
-
-.project-overlay {
-  height: 100%;
-  width: 100%;
-  z-index: 2;
+  max-width: 1440px;
   transition: 1s;
 }
 
-.project-cards {
+.card-front {
   display: flex;
-  justify-content: center;
-  height: 100%;
+  // display: none;
   width: 100%;
-  z-index: 3;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
 
-  h6 {
-    z-index: 5;
+  img {
+    position: absolute;
+    z-index: 2;
+    height: 225px;
+    width: 320px;
+    object-fit: cover;
+    opacity: 0.6;
+    transition: 1s;
   }
 
-  .project-info {
+  .project-stuff {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 4;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    height: 225px;
+    width: 320px;
+    z-index: 5;
+    padding: 5px;
+    transition: 1s;
 
-    &:hover {
-      background: rgba(0, 0, 0, 0.7);
-      transition: 1.5s;
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
     }
 
-    p {
-      font-family: s.$PrimaryFont;
-      font-size: 0.7rem;
+    h4 {
+      align-self: flex-start;
+    }
+
+    h6 {
+      margin: auto;
+    }
+
+    button {
+      background: none;
+      border: none;
+      align-self: flex-end;
+      color: s.$WhiteText;
+      text-decoration: underline 1px solid s.$WhiteText;
+      z-index: 6;
+
+      &:hover {
+        color: s.$PurpleColor;
+        text-decoration: underline 1px solid s.$PurpleColor;
+        transition: 0s;
+      }
     }
   }
 
+  .card-front-hidden {
+    display: none;
+  }
+}
+
+.card-back {
+  padding: 5px;
+  display: flex;
+  // display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  height: 225px;
+  width: 320px;
+  transition: 1s;
+
   h4 {
-    margin-left: 5px;
-    margin-bottom: 5px;
-    z-index: 3;
-    height: 10px;
+    z-index: 4;
   }
 
   p {
-    height: 30px;
-    font-size: 0.8rem;
-    margin-left: 5px;
-    z-index: 3;
-    color: rgb(173, 173, 173);
+    z-index: 4;
+    color: s.$PurpleColor;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 20px;
+  }
+
+  .card-back-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    z-index: 4;
+
+    a {
+      color: s.$WhiteText;
+      font-family: s.$PrimaryFont;
+      font-size: 0.9rem;
+
+      &:hover {
+        color: s.$PurpleColor;
+      }
+    }
+
+    button:hover {
+      color: s.$PurpleColor;
+      text-decoration: underline 1px solid s.$PurpleColor;
+    }
+  }
+
+  button {
+    background: none;
+    border: none;
+    color: s.$WhiteText;
+    text-decoration: underline 1px solid s.$WhiteText;
   }
 }
 
-.test {
-  height: 100%;
-  width: 100%;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-}
-
-.project-img {
-  position: absolute;
-  z-index: 2;
-  height: 225px;
-  width: 320px;
-  object-fit: cover;
-  opacity: 0.6;
-  transition: 1s;
-}
-
-.github-btn {
-  position: absolute;
-  margin-top: 5px;
-  margin-left: 285px;
-  z-index: 5;
-  transition: 1s;
-}
-
-.project-clickme {
-  position: absolute;
-  margin-left: 0px;
-  margin-top: 95px;
-  opacity: 1;
-  z-index: 4;
-  transition: 1s;
-}
-
-.project-buttons {
-  width: 100px;
-  background-color: red;
-}
-
-.project-lans {
-  display: flex;
-  position: absolute;
-  z-index: 5;
-  margin-right: 232px;
-  transition: 1s;
-}
-
-@media (max-width: 320px) {
-  .card {
-    margin-bottom: 0px;
-  }
+.card-back-hidden {
+  display: none;
 }
 
 @media (min-width: 425px) {
-  .card {
+  .card-1 {
+    height: 300px;
+    width: 425px;
+    margin-bottom: 20px;
+  }
+
+  .overlay {
     height: 300px;
     width: 425px;
   }
 
-  .project-img {
+  .card-front {
+    img {
+      height: 300px;
+      width: 425px;
+    }
+
+    .project-stuff {
+      height: 300px;
+      width: 425px;
+    }
+  }
+
+  .card-back {
     height: 300px;
     width: 425px;
-  }
-
-  .github-btn {
-    margin-left: 390px;
-  }
-
-  .project-lans {
-    margin-right: 330px;
-  }
-
-  .project-clickme {
-    margin-top: 140px;
+    padding: 10px;
   }
 }
 
 @media (min-width: 1440px) {
   .projects {
     flex-direction: row;
-    // flex-wrap: wrap;
+    justify-content: space-around;
   }
 }

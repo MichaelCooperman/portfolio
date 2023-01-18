@@ -8,6 +8,7 @@
 
   p {
     font-size: 1.4rem;
+    color: s.$PurpleColor;
   }
 
   .welcome {
@@ -50,7 +51,6 @@
   -webkit-mask-size: 2300% 100%;
   mask-size: 2300% 100%;
   border: none;
-  color: #000;
   cursor: pointer;
   animation: anim2 0.7s steps(22) forwards;
 }
@@ -67,7 +67,6 @@
   font-family: s.$PrimaryFont;
   font-weight: lighter;
   font-size: 20px;
-  // margin-top: 25px;
   overflow: hidden;
   z-index: 1;
 }
