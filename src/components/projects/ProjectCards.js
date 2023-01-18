@@ -32,7 +32,9 @@ const ProjectCards = (props) => {
             <h4>{title}</h4>
             <h6 className={classes["project-clickme"]}>Click To Preview</h6>
           </a>
-          <button onClick={handleReadMore}>Read More...</button>
+          <button className={classes["project-more"]} onClick={handleReadMore}>
+            Read More...
+          </button>
         </div>
 
         <img src={img} alt={alt} />
@@ -43,12 +45,14 @@ const ProjectCards = (props) => {
         <p>{description}</p>
         <div className={classes["card-back-bottom"]}>
           <a rel="noreferrer" target="_blank" href={git}>
-            Github
+            <button className={classes["card-back-btns"]}>Github</button>
           </a>
           <a rel="noreferrer" target="_blank" href={site}>
-            Preview
+            <button className={classes["card-back-btns"]}>Preview</button>
           </a>
-          <button onClick={handleReset}>Go Back...</button>
+          <button className={classes["card-back-btns"]} onClick={handleReset}>
+            Go Back...
+          </button>
         </div>
       </div>
     </div>

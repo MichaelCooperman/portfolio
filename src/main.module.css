@@ -330,20 +330,21 @@ button {
 .card-front .project-stuff h6 {
   margin: auto;
 }
-.card-front .project-stuff button {
-  background: none;
-  border: none;
+.card-front .project-stuff .project-more {
+  width: 100px;
+  border-radius: 20px;
+  background-color: #faf8ff;
+  font-family: "Kalam", cursive;
+  border: 1px solid black;
   align-self: flex-end;
-  color: #faf8ff;
-  -webkit-text-decoration: underline 1px solid #faf8ff;
-          text-decoration: underline 1px solid #faf8ff;
+  color: black;
   z-index: 6;
+  transition: 0.1s;
 }
-.card-front .project-stuff button:hover {
-  color: rgb(110, 110, 182);
-  -webkit-text-decoration: underline 1px solid rgb(110, 110, 182);
-          text-decoration: underline 1px solid rgb(110, 110, 182);
-  transition: 0s;
+.card-front .project-stuff .project-more:hover {
+  color: #faf8ff;
+  background-color: black;
+  border-color: white;
 }
 .card-front .card-front-hidden {
   display: none;
@@ -351,7 +352,7 @@ button {
 
 .card-back {
   padding: 5px;
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
@@ -359,6 +360,7 @@ button {
   height: 225px;
   width: 320px;
   transition: 1s;
+  background-color: black;
 }
 .card-back h4 {
   z-index: 4;
@@ -385,17 +387,24 @@ button {
 .card-back .card-back-bottom a:hover {
   color: rgb(110, 110, 182);
 }
-.card-back .card-back-bottom button:hover {
-  color: rgb(110, 110, 182);
-  -webkit-text-decoration: underline 1px solid rgb(110, 110, 182);
-          text-decoration: underline 1px solid rgb(110, 110, 182);
+.card-back .card-back-bottom .card-back-btns {
+  width: 75px;
+  border-radius: 20px;
+  background-color: #faf8ff;
+  font-family: "Kalam", cursive;
+  border: 1px solid black;
+  color: black;
+  z-index: 6;
+  transition: 0.1s;
 }
-.card-back button {
-  background: none;
-  border: none;
+.card-back .card-back-bottom .card-back-btns:hover {
   color: #faf8ff;
-  -webkit-text-decoration: underline 1px solid #faf8ff;
-          text-decoration: underline 1px solid #faf8ff;
+  background-color: black;
+  border-color: white;
+}
+
+.card-back-hidden {
+  display: none;
 }
 
 @media (min-width: 425px) {

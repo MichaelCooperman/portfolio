@@ -85,18 +85,21 @@
       margin: auto;
     }
 
-    button {
-      background: none;
-      border: none;
+    .project-more {
+      width: 100px;
+      border-radius: 20px;
+      background-color: s.$WhiteText;
+      font-family: s.$SecondaryFont;
+      border: 1px solid black;
       align-self: flex-end;
-      color: s.$WhiteText;
-      text-decoration: underline 1px solid s.$WhiteText;
+      color: black;
       z-index: 6;
+      transition: 0.1s;
 
       &:hover {
-        color: s.$PurpleColor;
-        text-decoration: underline 1px solid s.$PurpleColor;
-        transition: 0s;
+        color: s.$WhiteText;
+        background-color: black;
+        border-color: white;
       }
     }
   }
@@ -117,6 +120,7 @@
   height: 225px;
   width: 320px;
   transition: 1s;
+  background-color: black;
 
   h4 {
     z-index: 4;
@@ -147,17 +151,22 @@
       }
     }
 
-    button:hover {
-      color: s.$PurpleColor;
-      text-decoration: underline 1px solid s.$PurpleColor;
-    }
-  }
+    .card-back-btns {
+      width: 75px;
+      border-radius: 20px;
+      background-color: s.$WhiteText;
+      font-family: s.$SecondaryFont;
+      border: 1px solid black;
+      color: black;
+      z-index: 6;
+      transition: 0.1s;
 
-  button {
-    background: none;
-    border: none;
-    color: s.$WhiteText;
-    text-decoration: underline 1px solid s.$WhiteText;
+      &:hover {
+        color: s.$WhiteText;
+        background-color: black;
+        border-color: white;
+      }
+    }
   }
 }
 
