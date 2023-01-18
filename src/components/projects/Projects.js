@@ -4,7 +4,7 @@ import ProjectCards from "./ProjectCards";
 import test1 from "../../images/test1.jpg";
 import test2 from "../../images/test2.jpg";
 import test3 from "../../images/test3.jpg";
-import { DiSass, DiReact } from "react-icons/di";
+// import { DiSass, DiReact } from "react-icons/di";
 
 const Projects = () => {
   return (
