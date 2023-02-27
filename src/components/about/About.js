@@ -52,15 +52,26 @@ const About = () => {
             </div>
           </div>
         </div>
-        <a
-          href="https://github.com/MichaelCooperman"
-          rel="noreferrer"
-          target="_blank"
-        >
-          <div className={classes["about-btn"]}>
-            <Buttons mask="Github" text="Github" />
-          </div>
-        </a>
+        <div className={classes["about-buttons"]}>
+          <a
+            href="https://github.com/MichaelCooperman"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <div className={classes["about-btn"]}>
+              <Buttons mask="Github" text="Github" />
+            </div>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/michael-cooperman-9578b4263/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <div className={classes["about-btn"]}>
+              <Buttons mask="LinkedIn" text="LinkedIn" />
+            </div>
+          </a>
+        </div>
       </div>
     </section>
   );

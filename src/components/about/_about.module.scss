@@ -75,6 +75,13 @@
   }
 }
 
+.about-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 150px;
+}
+
 @media (min-width: 768px) {
   // .about-section {
   //   height: 1000px;
@@ -97,5 +104,11 @@
       justify-content: flex-start;
       width: 50%;
     }
+  }
+
+  .about-buttons {
+    flex-direction: row;
+    justify-content: space-around;
+    height: 150px;
   }
 }

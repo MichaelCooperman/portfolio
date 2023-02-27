@@ -140,6 +140,13 @@ button {
   margin: 0 40px;
 }
 
+.about-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 150px;
+}
+
 @media (min-width: 768px) {
   .skills {
     margin-top: 10px;
@@ -155,6 +162,11 @@ button {
   .skills .bottom-skills {
     justify-content: flex-start;
     width: 50%;
+  }
+  .about-buttons {
+    flex-direction: row;
+    justify-content: space-around;
+    height: 150px;
   }
 }
 .contact-section {
@@ -278,12 +290,10 @@ button {
 
 .projects {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 20px auto;
-  width: 100%;
-  height: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 20px;
+  justify-content: space-evenly;
   max-width: 1440px;
   transition: 1s;
 }
@@ -436,7 +446,10 @@ button {
 @media (min-width: 1440px) {
   .projects {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+  }
+  .card-1 {
+    margin: 20px;
   }
 }
 .welcome-section {
@@ -488,13 +501,11 @@ button {
   mask-size: 2300% 100%;
   border: none;
   cursor: pointer;
-  -webkit-animation: anim2 0.7s steps(22) forwards;
-          animation: anim2 0.7s steps(22) forwards;
+  animation: anim2 0.7s steps(22) forwards;
 }
 
 .button-container button:hover {
-  -webkit-animation: anim1 0.7s steps(22) forwards;
-          animation: anim1 0.7s steps(22) forwards;
+  animation: anim1 0.7s steps(22) forwards;
 }
 
 .mask {
@@ -509,17 +520,6 @@ button {
   z-index: 1;
 }
 
-@-webkit-keyframes anim1 {
-  from {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
-  }
-  to {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-}
-
 @keyframes anim1 {
   from {
     -webkit-mask-position: 100% 0;
@@ -528,16 +528,6 @@ button {
   to {
     -webkit-mask-position: 0 0;
     mask-position: 0 0;
-  }
-}
-@-webkit-keyframes anim2 {
-  from {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-  to {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
   }
 }
 @keyframes anim2 {
