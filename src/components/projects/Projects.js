@@ -5,7 +5,7 @@ import test1 from "../../images/test1.jpg";
 import test2 from "../../images/test2.jpg";
 import test3 from "../../images/test3.jpg";
 import test4 from "../../images/test4.jpg";
-import underconstruction from "../../images/underconstruction.jpg";
+// import underconstruction from "../../images/underconstruction.jpg";
 
 const Projects = () => {
   return (
@@ -14,6 +14,14 @@ const Projects = () => {
         <h2>Projects</h2>
       </div>
       <div className={classes.projects}>
+        <ProjectCards
+          site="https://sharpshootersbjj.netlify.app/"
+          img={test4}
+          alt="Sharp Shooter BJJ Image"
+          title="Sharp Shooters BJJ"
+          description=""
+          git="https://github.com/MichaelCooperman/SharpShooters-BJJ"
+        />
         <ProjectCards
           site="https://daydreamcookies.netlify.app/"
           img={test1}
@@ -38,22 +46,15 @@ const Projects = () => {
           description="Fun study guide for anyone learning Front-End Web Development, used use-context to access props globally. Made with React, React Router and Sass."
           git="https://github.com/MichaelCooperman/Front-End-Quiz"
         />
-        <ProjectCards
-          site="https://sharpshootersbjj.netlify.app/"
-          img={test4}
-          alt="Sharp Shooter BJJ Image"
-          title="Sharp Shooters BJJ"
-          description=""
-          git="https://github.com/MichaelCooperman/SharpShooters-BJJ"
-        />
-        <ProjectCards
+
+        {/* <ProjectCards
           site=""
           img={underconstruction}
           alt=""
           title="Project 5 Under Construction"
           description=""
           git=""
-        />
+        /> */}
       </div>
     </section>
   );

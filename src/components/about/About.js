@@ -12,12 +12,13 @@ const About = () => {
         <div>
           <h2>About Me</h2>
           <p>
-            My Name is Michael Cooperman, also known as Mike. I am a 22 year old
-            Front-End Web Developer.
+            My Name is Michael Cooperman, also known as Mike. I Front-End Web
+            Developer with a passion for building multi-platform websites using
+            Responsive Web Design.
             <br />I enjoy expanding my knowledge of programming and building eye
             appealing, fully responsive websites.
-            <br /> During my free time I like to go longboarding, watch movies,
-            and play games online with friends.
+            <br /> During my free time I like to go longboarding, watching
+            movies, and playing games online with friends.
           </p>
         </div>
 

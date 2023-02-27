@@ -92,6 +92,9 @@ button {
   width: 90%;
   height: 100%;
 }
+.about-section .about h2 {
+  padding-bottom: 40px;
+}
 .about-section .about a {
   text-decoration: none;
 }
@@ -186,6 +189,10 @@ button {
   justify-content: center;
 }
 
+.contact-title {
+  margin-bottom: 40px;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -263,7 +270,7 @@ button {
 }
 
 .projects-section {
-  padding: 200px 0;
+  padding: 100px 0;
   background-color: rgba(18, 18, 18, 0.9529411765);
   border-bottom: 1px solid rgb(110, 110, 182);
 }
@@ -294,8 +301,12 @@ button {
   flex-wrap: wrap;
   margin: 20px;
   justify-content: space-evenly;
-  max-width: 1440px;
+  max-width: 1000px;
   transition: 1s;
+}
+
+.project-title {
+  margin-bottom: 40px;
 }
 
 .card-front {

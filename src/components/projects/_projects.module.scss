@@ -1,7 +1,7 @@
 @use "../../variables" as s;
 
 .projects-section {
-  padding: 200px 0;
+  padding: 100px 0;
   background-color: s.$GreyColor;
   border-bottom: 1px solid s.$PurpleColor;
 }
@@ -33,8 +33,12 @@
   flex-wrap: wrap;
   margin: 20px;
   justify-content: space-evenly;
-  max-width: 1440px;
+  max-width: 1000px;
   transition: 1s;
+}
+
+.project-title {
+  margin-bottom: 40px;
 }
 
 .card-front {

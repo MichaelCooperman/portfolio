@@ -7,7 +7,7 @@ const Welcome = () => {
     <section id="welcome" className={classes["welcome-section"]}>
       <div className={classes.welcome}>
         <h1>Hello,</h1>
-        <h1>I'm Mike</h1>
+        <h1>I'm Michael</h1>
         <p>A Front-End Web Developer.</p>
         <a href="/#contact">
           <Buttons mask="Get in touch." text="Get in touch." />
