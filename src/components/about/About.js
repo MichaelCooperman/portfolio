@@ -16,7 +16,7 @@ const About = () => {
             Developer with a passion for building multi-platform websites using
             Responsive Web Design.
             <br />I enjoy expanding my knowledge of programming and building eye
-            appealing, fully responsive websites.
+            appealing, user friendly websites.
             <br /> During my free time I like to go longboarding, watching
             movies, and playing games online with friends.
           </p>
