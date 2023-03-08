@@ -19,7 +19,7 @@ const Projects = () => {
           img={test4}
           alt="Sharp Shooter BJJ Image"
           title="Sharp Shooters BJJ"
-          description=""
+          description="Worked with a UI/UX designer to build a prototype project for a client. Focuses on an engaging web interface that is user friendly. Built with React and Sass."
           git="https://github.com/MichaelCooperman/SharpShooters-BJJ"
         />
         <ProjectCards
