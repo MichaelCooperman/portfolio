@@ -12,7 +12,7 @@ const About = () => {
         <div>
           <h2>About Me</h2>
           <p>
-            My Name is Michael Cooperman, also known as Mike. I Front-End Web
+            My Name is Michael Cooperman, also known as Mike. I'm Front-End Web
             Developer with a passion for building multi-platform websites using
             Responsive Web Design.
             <br />I enjoy expanding my knowledge of programming and building eye
